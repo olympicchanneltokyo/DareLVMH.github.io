@@ -1,0 +1,22 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+<script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.5/aframe/build/aframe-ar.js"></script>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
+    <a-assets>
+        <!-- id=“file name“ src=“file url" -->
+        <a-asset-item id="crab" src="https://raw.githubusercontent.com/lajunex0/3dmodels/master/NSLogo7.gltf" crossOrigin="anonymous">
+        </a-asset-item>
+    </a-assets>
+      <a-marker preset="custom" type="pattern" url='https://DareLVMH.github.io/'>
+          <a-entity gltf-model="#crab"
+                position="1 1 0"
+                scale=".1 .1 .1"
+                animation-mixer="loop: pingpong">
+         </a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
