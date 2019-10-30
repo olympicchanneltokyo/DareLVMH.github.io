@@ -14,7 +14,7 @@
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
             
         <a-assets>
-            <a-asset-item id="animated-asset" url="https://grantbiber.github.io/crab.gltf"></a-asset-item>
+            <a-asset-item id="crab" src="https://grantbiber.github.io/crab.gltf"></a-asset-item>
         </a-assets>
 
             
@@ -23,7 +23,7 @@
 		<a-entity
                 position="1 1 0"
                 id="animated-model"
-                gltf-model="#animated-asset"
+                gltf-model="#crab"
                 scale=".1 .1 .1"
                 animation-mixer="loop: pingpong" 
                 >  
