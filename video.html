@@ -19,11 +19,12 @@
 		
         <a-assets>
             <a-asset-item id="animated-asset" src="test2.glb"></a-asset-item>
+	    <video id="video" autoplay="true" loop="true" crossorigin="anonymous" playsinline webkit-playsinline src="https://cdn.glitch.com/a56ef1d8-4542-4865-842b-0f49a97b3ec5%2Ftokyowelcome.mp4?v=1573387270611"></video>
         </a-assets>
             
             
         <a-marker markerhandler emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" preset='custom' type='pattern' smooth='true' smoothCount="10" url='https://grantbiber.github.io/pattern-robot.patt'>
-	<a-text position="0 1 -3" wrap-count="15" rotation="-90 0 0" color="black" value="Closer" align="center"></a-text>
+	<a-text position="0 1 -3" wrap-count="15" rotation="-90 0 0" color="black" value="Closer 2" align="center"></a-text>
 		<a-entity
                 id="animated-model"
                 gltf-model="#animated-asset"
@@ -37,8 +38,8 @@
 	
 	<a-marker type='pattern' smooth='true' smoothCount='15' url='https://grantbiber.github.io/pattern-welcome.patt'>
 		
-		<a-video src="https://cdn.glitch.com/a56ef1d8-4542-4865-842b-0f49a97b3ec5%2Ftokyowelcome.mp4?v=1573387270611"
-                rotation="-90 0 0" width="5" height="7"></a-video>
+		<a-video src="#video"
+                rotation="-90 0 0" width="3.75" height="5.25"></a-video>
 	</a-marker>
 
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
