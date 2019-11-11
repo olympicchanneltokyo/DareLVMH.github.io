@@ -20,19 +20,19 @@
             
             
         <a-marker markerhandler emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" preset='custom' type='pattern' smooth='true' smoothCount="10" url='https://grantbiber.github.io/pattern-robot.patt' camera="far:100000; near:0.01">
-	<a-text font="sourcecodepro" position="0 2 -5.5" wrap-count="15" rotation="-90 0 0" color="yellow" value="Konnichiwa! Welcome to Japan 3!" align="center"></a-text>
+	<a-text font="sourcecodepro" position="0 2 -5.5" wrap-count="12.5" rotation="-90 0 0" color="yellow" value="Konnichiwa! Welcome to Japan!" align="center"></a-text>
 		<a-entity
                 id="animated-model"
                 gltf-model="#animated-asset"
-                scale=".3 .3 .3"
-		position="0 -0.5 1"
+                scale=".5 .5 .5"
+		position="0 0 1"
 		animation-mixer
 		rotation="-90 0 0"
                 >  
             </a-entity>
         </a-marker>
 	
-	<a-marker type='pattern' smooth='true' smoothCount='5' url='https://grantbiber.github.io/pattern-welcome.patt'>
+	<a-marker type='pattern' smooth='true' smoothCount='50' url='https://grantbiber.github.io/pattern-welcome.patt'>
 		 <a-entity rotation="-90 0 0" position="0 -0.5 -2" geometry="primitive:plane; width:5; height:8" 
 		  material="shader:gif;src:url(DAREgif.gif)"
 		  gif="" transparent="true">
